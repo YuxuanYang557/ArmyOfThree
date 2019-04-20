@@ -1,0 +1,599 @@
+<app-header></app-header>
+<div class="jumbotron">
+    <div class="container">
+        <div class="hero-text">
+            <h1>No Idea Where to?</h1>
+            <p>Take Your Shot ^^</p>
+            <form>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="domestic">
+                  <input type="radio" class="form-check-input" id="domestic" name="area" value="domestic" checked><span></span>Domestic
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="foreign">
+                  <input type="radio" class="form-check-input" id="foreign" name="area" value="foreign"><span></span>Foreign
+                </label>
+              </div><br /><br />
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalInspiration" (click)="pick()">Hit me!</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="modalInspiration">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h6 class="modal-title">Surprise Destination</h6>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body pb-0">
+        <figure>
+          <img src={{place.imgUrl}} alt="Trulli" style="width:100%">
+          <figcaption class="pt-3 text-info">{{place.name}}</figcaption>
+        </figure>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <!-- Nav pills -->
+    <ul class="nav nav-pills nav-justified" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#landscape">LANDSCAPE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#atmosphere">ATMOSPHERE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#interest">INTEREST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#tourist">TOURIST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#month">MONTH</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="landscape" class="container tab-pane active"><br>
+        <div class="row card-columns">
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Honulolo.png" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Beach</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/desert.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Desert</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/montain.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Montain</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/jungle.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Jungle</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/volcano.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Volcano</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/waterfall.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Waterfall</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Sunset.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Sunset</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/island.jpg" alt="Punta Cana" style="width:100%">
+                    <h4 class="card-title">Island</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Punta Cana</a>
+                    <a href="#" class="card-link text-info">Playa del Carmen</a>
+                    <a href="#" class="card-link text-info">Cancun</a>
+                    <a href="#" class="card-link text-info">Varadero</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="atmosphere" class="container tab-pane fade"><br>
+        <div class="row card-columns">
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/mysterious.jpg" alt="Paris" style="width:100%">
+                    <h4 class="card-title">Mysterious</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Puerto Vallarta</a>
+                    <a href="#" class="card-link text-info">Venice</a>
+                    <a href="#" class="card-link text-info">Palm - Eagle Beach</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/romantic.jpg" alt="Paris" style="width:100%">
+                    <h4 class="card-title">Romantic</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Puerto Vallarta</a>
+                    <a href="#" class="card-link text-info">Venice</a>
+                    <a href="#" class="card-link text-info">Palm - Eagle Beach</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/historical.jpg" alt="Paris" style="width:100%">
+                    <h4 class="card-title">Historical</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Puerto Vallarta</a>
+                    <a href="#" class="card-link text-info">Venice</a>
+                    <a href="#" class="card-link text-info">Palm - Eagle Beach</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Fairy.jpg" alt="Paris" style="width:100%">
+                    <h4 class="card-title">Fairy</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Puerto Vallarta</a>
+                    <a href="#" class="card-link text-info">Venice</a>
+                    <a href="#" class="card-link text-info">Palm - Eagle Beach</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="interest" class="container tab-pane fade"><br>
+        <div class="row card-columns">
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/hiking.jpg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Hiking</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/diving.jpg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Diving</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/skiing.jpg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Skiing</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/shopping.jpeg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Shopping</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/concert.png" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Concert</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/party.jpg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Party</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/wildlife.jpeg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Wildlife</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/photograph.jpg" alt="Vatican City" style="width:100%">
+                    <h4 class="card-title">Photograph</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Vatican City</a>
+                    <a href="#" class="card-link text-info">Paris</a>
+                    <a href="#" class="card-link text-info">Florence</a>
+                    <a href="#" class="card-link text-info">Amsterdam</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="tourist" class="container tab-pane fade"><br>
+        <div class="row card-columns">
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/orlando2.jpg" alt="Orlando" style="width:100%">
+                    <h4 class="card-title">Orlando</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Orlando</a>
+                    <a href="#" class="card-link text-info">Salou</a>
+                    <a href="#" class="card-link text-info">Port d'Alcudia</a>
+                    <a href="#" class="card-link text-info">Wisconsin Dells</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Couple.jpg" alt="Orlando" style="width:100%">
+                    <h4 class="card-title">Couple</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Orlando</a>
+                    <a href="#" class="card-link text-info">Salou</a>
+                    <a href="#" class="card-link text-info">Port d'Alcudia</a>
+                    <a href="#" class="card-link text-info">Wisconsin Dells</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/self.jpg" alt="Orlando" style="width:100%">
+                    <h4 class="card-title">Self</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Orlando</a>
+                    <a href="#" class="card-link text-info">Salou</a>
+                    <a href="#" class="card-link text-info">Port d'Alcudia</a>
+                    <a href="#" class="card-link text-info">Wisconsin Dells</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/bike.jpg" alt="Orlando" style="width:100%">
+                    <h4 class="card-title">Bicking</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Orlando</a>
+                    <a href="#" class="card-link text-info">Salou</a>
+                    <a href="#" class="card-link text-info">Port d'Alcudia</a>
+                    <a href="#" class="card-link text-info">Wisconsin Dells</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="month" class="container tab-pane fade"><br>
+        <div class="row card-columns">
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/january.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">January</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Feburary.png" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">Feburary</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/march.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">March</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/April.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">April</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/May.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">May</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/June.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">June</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/july.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">July</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Augest.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">Augest</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/September.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">Spetember</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/October.png" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">October</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/Novamber.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">November</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4">
+                <div class="card">
+                  <div class="card_img">
+                    <img class="card-img-top" src="../../assets/image/december.jpeg" alt="Koh Samui" style="width:100%">
+                    <h4 class="card-title">December</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="card-link text-info">Koh Samui</a>
+                    <a href="#" class="card-link text-info">Barcelona</a>
+                    <a href="#" class="card-link text-info">Singapore</a>
+                    <a href="#" class="card-link text-info">Maldives</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
